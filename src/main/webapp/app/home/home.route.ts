@@ -1,4 +1,6 @@
 import { Route } from '@angular/router';
+import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
+import { CourseComponent } from 'app/course/course.component';
 
 import { HomeComponent } from './home.component';
 

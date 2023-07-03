@@ -45,7 +45,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/gateway?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password:
+    password: Sunhith081999@
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -76,6 +76,17 @@ spring:
     port: 25
     username:
     password:
+  #  mail:
+  #    host: smtp.gmail.com
+  #    port: 587
+  #    username: sunhith99@gmail.com #Replace this field with your Gmail username.
+  #    password: 'Sunhith081999@'
+  #    protocol: smtp
+  #    tls: true
+  #    properties.mail.smtp:
+  #      auth: true
+  #      starttls.enable: true
+  #      ssl.trust: smtp.gmail.com
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   thymeleaf:

@@ -13,6 +13,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ErrorComponent } from './layouts/error/error.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     GatewayEntityModule,
     GatewayAppRoutingModule
   ],
-  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
+  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent, CourseComponent],
   bootstrap: [JhiMainComponent]
 })
 export class GatewayAppModule {}

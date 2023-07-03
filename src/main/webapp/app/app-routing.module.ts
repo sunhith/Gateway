@@ -5,6 +5,8 @@ import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
+import { HomeComponent } from './home/home.component';
+import { CourseComponent } from './course/course.component';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
 
@@ -23,6 +25,18 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
         {
           path: 'account',
           loadChildren: () => import('./account/account.module').then(m => m.GatewayAccountModule)
+        },
+        {
+          path: 'ss',
+          component: HomeComponent
+        },
+        {
+          path: 'course',
+          component: CourseComponent,
+          data: {
+            authorities: ['ROLE_ADMIN']
+          },
+          canActivate: [UserRouteAccessService]
         },
         ...LAYOUT_ROUTES
       ],

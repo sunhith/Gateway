@@ -141,6 +141,13 @@ spring:
   output:
     ansi:
       console-available: true
+  cloud:
+    gateway:
+      routes:
+        - id: limitsService
+          uri: lb://LIMITSSERVICE
+          predicates:
+            - Path=/limitsservice/**
 
 server:
   servlet:
